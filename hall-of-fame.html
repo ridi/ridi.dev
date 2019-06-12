@@ -7,7 +7,7 @@ layout: default
 <ul>
     {% for exploit in site.data.exploits %}
     <li>
-        {% assign hacker = site.data.hackers[explit.hacker] %}
+        {% assign hacker = site.data.hackers[exploit.hacker] %}
         <dl>
             <dt>제보일</dt>
             <dd>{{ exploit.date }}</dd>
