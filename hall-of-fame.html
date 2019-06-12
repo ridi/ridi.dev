@@ -2,21 +2,33 @@
 layout: default
 ---
 
-<h2>명예의 전당</h2>
+<h1>Hall of Fame</h1>
 
 <ul>
     {% for exploit in site.data.exploits %}
     <li>
         {% assign hacker = site.data.hackers[exploit.hacker] %}
-        <dl>
+        <dl class="exploit">
             <dt>제보일</dt>
             <dd>{{ exploit.date }}</dd>
             <dt>이름</dt>
             <dd><a href={{ hacker.url }}>{{ exploit.hacker }}</a></dd>
             <dt>취약점</dt>
-            <dd>{{ exploit.title }}</dd>
+            <dd>
+                {{ exploit.title }}
+                {% if exploit.target-url %}
+            </dd>
+            <dt>
+                대상 URL
+            </dt>
+            <dd>
+                <code>{{ exploit.target-url }}</code>
+                {% endif %}
+            </dd>
+            {% if exploit.description %}
             <dt>설명</dt>
             <dd>{{ exploit.description }}</dd>
+            {% endif %}
         </dl>
     </li>
     {% endfor %}
