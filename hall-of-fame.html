@@ -4,11 +4,11 @@ layout: default
 
 <h1>Hall of Fame</h1>
 
-<ul>
+<ul class='exploits'>
     {% for exploit in site.data.exploits %}
     <li>
         {% assign hacker = site.data.hackers[exploit.hacker] %}
-        <dl class="exploit">
+        <dl>
             <dt>제보일</dt>
             <dd>{{ exploit.date }}</dd>
             <dt>이름</dt>

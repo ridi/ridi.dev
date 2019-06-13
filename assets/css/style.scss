@@ -3,18 +3,22 @@
 
 @import "{{ site.theme }}";
 
+.exploits {
+  list-style: none;
 
-dl {
-  display: grid;
-  grid-template-columns: max-content auto;
-}
+  dl {
+  }
 
-dt {
-  grid-column-start: 1;
-  margin-top: 0 !important;
-}
+  dt {
+    float: left;
+    clear: left;
+    width: 80px;
+    text-align: right;
+    font-style: normal !important;
+    margin-top: 0 !important;
+  }
 
-dd {
-  grid-column-start: 2;
-  margin-bottom: 0 !important;
+  dd {
+    margin: 0 0 0 80px !important;
+  }
 }
