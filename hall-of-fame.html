@@ -1,20 +1,27 @@
 ---
 layout: default
+footer: footer_hall-of-fame.html
 ---
 
 <h1>🏆 명예의 전당</h1>
 
-<p><a href='/bounty'>리디 버그 바운티</a> 프로그램에서 첫 유효 제보에 대한 포상을 받으신 분들의 명단입니다.</p>
+<p><a href="/bounty">리디 버그 바운티</a> 프로그램에서 첫 유효 제보에 대한 포상을 받으신 분들의 명단입니다.</p>
 
-<ul class='exploits'>
+<ul class="exploits">
     {% for exploit in site.data.exploits %}
     <li>
         {% assign hacker = site.data.hackers[exploit.hacker] %}
-        <dl>
+        <dl class="exploit" id="{{ exploit.hacker }}">
             <dt>제보일</dt>
             <dd>{{ exploit.date }}</dd>
             <dt>이름</dt>
-            <dd><a href={{ hacker.url }}>{{ exploit.hacker }}</a></dd>
+            <dd>
+                {% if hacker.url %}
+                <a href="{{ hacker.url }}" target="_blank" rel="noopener">{{ exploit.hacker }}</a>
+                {% else %}
+                {{ exploit.hacker }}
+                {% endif %}
+            </dd>
             <dt>취약점</dt>
             <dd>
                 {{ exploit.title }}
@@ -35,3 +42,15 @@ layout: default
     </li>
     {% endfor %}
 </ul>
+
+<h3>Special Contributors</h3>
+
+<p>리디의 보안 수준을 향상시키는데 기여하였으나, 바운티 프로그램의 포상 대상에 속하지 않으신 분들을 선정하였습니다.</p>
+
+{% for contributor in site.data.contributors %}
+<ul>
+    <li>
+        <a href="{{ contributor.url }}" target="_blank" rel="noopener">{{ contributor.name }}</a>
+    </li>
+</ul>
+{% endfor %}
