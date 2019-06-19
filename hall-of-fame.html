@@ -47,10 +47,10 @@ footer: footer_hall-of-fame.html
 
 <p>리디의 보안 수준을 향상시키는데 기여하였으나, 바운티 프로그램의 포상 대상에 속하지 않으신 분들을 선정하였습니다.</p>
 
-{% for contributor in site.data.contributors %}
 <ul>
+    {% for contributor in site.data.contributors %}
     <li>
         <a href="{{ contributor.url }}" target="_blank" rel="noopener">{{ contributor.name }}</a>
     </li>
+    {% endfor %}
 </ul>
-{% endfor %}
