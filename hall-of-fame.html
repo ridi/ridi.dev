@@ -25,15 +25,15 @@ footer: footer_hall-of-fame.html
             <dt>취약점</dt>
             <dd>
                 {{ exploit.title }}
-                {% if exploit.target-url %}
             </dd>
+            {% if false and exploit.target-url %}
             <dt>
                 대상 URL
             </dt>
             <dd>
                 <code>{{ exploit.target-url }}</code>
-                {% endif %}
             </dd>
+            {% endif %}
             {% if exploit.description %}
             <dt>설명</dt>
             <dd>{{ exploit.description }}</dd>
@@ -50,7 +50,11 @@ footer: footer_hall-of-fame.html
 <ul>
     {% for contributor in site.data.contributors %}
     <li>
+        {% if contributor.url %}
         <a href="{{ contributor.url }}" target="_blank" rel="noopener">{{ contributor.name }}</a>
+        {% else %}
+        {{ contributor.name }}
+        {% endif %}
     </li>
     {% endfor %}
 </ul>
