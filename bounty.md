@@ -19,7 +19,7 @@
 - 최신 버전의 리디북스 Android 애플리케이션
 - 최신 버전의 리디북스 Qt 애플리케이션
 - 최신 버전의 리디북스 페이퍼 펌웨어
-- 그 외 <u>paper.ridibook.com, help.ridibooks.com을 제외한</u> *.ridibooks.com 도메인에서 제공되는 모든 서비스
+- 그 외 <u>paper.ridibooks.com, help.ridibooks.com을 제외한</u> *.ridibooks.com 도메인에서 제공되는 모든 서비스
 
 
 ### 유효한 취약점
