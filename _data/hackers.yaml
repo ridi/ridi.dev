@@ -1,7 +1,8 @@
 Anonymous:
-  bounty: 1000000
+  bounty: 1400000
   tasks:
     - https://app.asana.com/0/1118181817326032/1148757820253766
+    - https://app.asana.com/0/1118181817326032/1136643310743935
 
 extr@HypwnLab:
   url: https://twitter.com/e3xtr
@@ -80,7 +81,9 @@ dogbong:
 
 cby234:
   url: https://cby234.tistory.com/notice/76
-  bounty: 300000
+  bounty: 400000
+  tasks:
+    - https://app.asana.com/0/1118181817326032/1148835600098460 
 
 이인형(2Doll):
   bounty: 400000
@@ -112,3 +115,14 @@ jeong.su@RAON_WhiteHat:
 김태영(하얀백숙):
   url: https://wchicken.tistory.com/
   bounty: 200000
+
+고준영(aegisduck): 
+  url: https://aegisduck.tistory.com/pages/aboutme
+  bounty: 100000
+
+문영식:
+  bounty: 200000
+
+이세민:
+  url: https://multicore-it.com
+  bounty: 100000
