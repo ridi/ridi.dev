@@ -13,12 +13,12 @@
 
 ### 범위
 
-- 리디북스 서점 (ridibooks.com)
-- 리디셀렉트 (select.ridibooks.com)
-- 최신 버전의 리디북스 iOS 애플리케이션
-- 최신 버전의 리디북스 Android 애플리케이션
-- 최신 버전의 리디북스 페이퍼 펌웨어
-- 그 외 <u>paper.ridibooks.com, help.ridibooks.com을 제외한</u> *.ridibooks.com 도메인에서 제공되는 모든 서비스
+- 리디 (`ridi.com`)
+- 리디셀렉트 (`select.ridi.com`)
+- 최신 버전의 리디 iOS 애플리케이션
+- 최신 버전의 리디 Android 애플리케이션
+- 최신 버전의 리디페이퍼 펌웨어
+- 그 외 <u>`paper.ridibooks.com`, `help.ridibooks.com`을 제외한</u> `*.ridibooks.com` 및 `*.ridi.com` 도메인에서 제공되는 모든 서비스
 
 
 ### 유효한 취약점
@@ -56,7 +56,7 @@
 
 ### 포상
 
-- 첫 유효 제보에 한하여 리디북스 페이퍼 프로를 지급해 드립니다.
+- 첫 유효 제보에 한하여 리디페이퍼를 지급해 드립니다.
 - 포상금액은 심각도와 보고서 등을 종합적으로 검토하여 결정됩니다.
   - 낮음(Low): 10~50만원
   - 보통(Medium): 50~100만원
